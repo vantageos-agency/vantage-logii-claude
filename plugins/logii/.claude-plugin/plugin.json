@@ -1,0 +1,26 @@
+{
+  "name": "logii",
+  "version": "1.0.0",
+  "description": "Logii for Claude: read your agency's Logii data in plain words — people and buildings, lots, portfolios, management and syndic mandates, leases and vacancies, tenant and owner accounts, budgets, supplier contracts, work orders, condominium files and agency fees. Read-only; each person signs in with their own Logii access.",
+  "author": {
+    "name": "VantageOS",
+    "email": "hello@vantageos.agency"
+  },
+  "homepage": "https://github.com/vantageos-agency/vantage-logii-claude",
+  "repository": "https://github.com/vantageos-agency/vantage-logii-claude",
+  "license": "FSL-1.1-Apache-2.0",
+  "keywords": [
+    "mcp",
+    "logii",
+    "immobilier",
+    "gerance",
+    "syndic",
+    "real-estate"
+  ],
+  "mcpServers": {
+    "logii": {
+      "type": "http",
+      "url": "https://logii.vantagepeers.com/mcp"
+    }
+  }
+}
