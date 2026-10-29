@@ -1,6 +1,6 @@
 {
   "name": "logii",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Logii for Claude: read your agency's Logii data in plain words — people and buildings, lots, portfolios, management and syndic mandates, leases and vacancies, tenant and owner accounts, budgets, supplier contracts, work orders, condominium files and agency fees. Read-only; each person signs in with their own Logii access.",
   "author": {
     "name": "VantageOS",

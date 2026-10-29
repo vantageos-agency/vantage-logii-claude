@@ -51,6 +51,20 @@ paiements.
   "cancelled", "principal". Totaux : "rows", "payments", "amount",
   "cancelled_payments" ; chaque paiement n'y est compté qu'une fois.
 
+### Totaux : ceux d'une page, jamais ceux de la période
+
+Les trois outils d'honoraires renvoient des totaux calculés sur la page servie. Le champ
+"totals_scope" le dit : "page".
+
+- Quand "totals_scope" vaut "page", donner le chiffre comme un total partiel : « total
+  partiel, sur cette page de résultats ». Ne jamais le présenter comme le total du mois, du
+  trimestre ou de la période demandée.
+- Ne jamais additionner les totaux de plusieurs pages : une même pièce peut figurer sur deux
+  pages, et la somme la compterait deux fois.
+- Dire que le total de la période n'est pas encore disponible depuis ces outils. On peut
+  proposer de montrer la page suivante ("nextCursor") pour voir d'autres lignes, sans
+  cumuler ses totaux.
+
 ### Ce que la documentation ne définit pas
 
 - Le « reste à encaisser » ou les honoraires « impayés » : non défini par la documentation. Ne pas soustraire l'encaissé du facturé ; donner les deux totaux.
@@ -134,6 +148,19 @@ fees, "Date de lettrage" for matchings, "Date de paiement" for payments.
 - Collected: "date", "journal", "label", "amount" ("Montant débité (paiement)"),
   "cancelled", "principal". Totals: "rows", "payments", "amount",
   "cancelled_payments"; each payment is counted once.
+
+### Totals: those of one page, never those of the period
+
+The three fee tools return totals computed over the page they serve. The field
+"totals_scope" says so: "page".
+
+- When "totals_scope" is "page", give the figure as a partial total: "partial total, on this
+  page of results". Never present it as the total of the month, the quarter or the period
+  asked for.
+- Never add the totals of several pages together: the same piece can appear on two pages,
+  and the sum would count it twice.
+- Say that the period total is not available yet from these tools. You may offer to show
+  the next page ("nextCursor") to see more lines, without adding up its totals.
 
 ### What the documentation does not define
 
